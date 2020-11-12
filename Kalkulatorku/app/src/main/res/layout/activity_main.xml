@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Masukkan Dua Angka"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/lightBlue"
+        android:textSize="14pt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Masukkan Angka Pertama"
+        android:textColor="@color/lightBlue"
+        android:textSize="9pt" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input1"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/lightBlue"
+            android:backgroundTint="@color/lightBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Angka Kedua"
+        android:textColor="@color/lightBlue"
+        android:textSize="9pt"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input2"
+            android:backgroundTint="@color/lightBlue"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/lightBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+            <Button
+                android:id="@+id/btn_tambah"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom1"
+                android:text="+"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_kurang"
+                android:background="@drawable/custom1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:text="Hasil"
+            android:textStyle="bold"
+            android:textColor="@color/lightBlue"
+            android:textSize="12pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_kali"
+            android:background="@drawable/custom1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="*"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/btn_bagi"
+            android:background="@drawable/custom1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="/"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20pt"
+            android:text="0"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold"
+            android:textColor="@color/lightBlue"
+            android:paddingBottom="30dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="120dp"
+        android:background="@color/lightBlue"
+        android:text="CLEAR"
+        android:textColor="#ffff"
+        android:textSize="20sp" />
+</LinearLayout>
