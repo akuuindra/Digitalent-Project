@@ -27,7 +27,8 @@
         android:clickable="true"
         android:src="@android:drawable/ic_input_add"
         android:tint="@color/oren_jeruk"
-        android:backgroundTint="@color/oren_jeruk" />
+        android:backgroundTint="@color/oren_jeruk"
+        />
 
 
 </RelativeLayout>
